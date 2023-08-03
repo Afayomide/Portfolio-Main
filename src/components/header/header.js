@@ -21,9 +21,10 @@ function Header(){
 </div>
 <div>
         <div  className="about-me">
-            <span className="about">About</span>Hello world, I am a Front-end web developer from Lagos, Nigeria.
+            <p><span className="about">About</span>Hello world, I am a Front-end web developer from Lagos, Nigeria.
             I am proficient in Javascript, React, Html, Css, Bootstrap and I am ready to 
             work with an amazing team of developers for the right company.
+        </p>
         </div>
         <a href={CV} download={CV}><Button className="button colors bg-dark d-flex justify-content-center">Download CV</Button></a>
       </div>

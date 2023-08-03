@@ -10,7 +10,7 @@
     transition: background 0.5s ease-in-out;
 }
 
-.per-contact p:hover ,a:hover{
+.per-contact{
     cursor: pointer;
     color: white;
 }
@@ -47,4 +47,10 @@
             width: 20em;
         }
     
+}
+
+@media(max-width: 400px){
+    .per-contact{
+        width: 18em;
+    }
 }

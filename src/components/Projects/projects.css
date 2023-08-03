@@ -75,5 +75,10 @@ a{
 
     }
 
+    .projects img {
+        width: 18em;
+        height: 18em;
+    }
+
  
 }

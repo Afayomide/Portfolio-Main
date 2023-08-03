@@ -10,8 +10,8 @@ function App() {
     <div className="App">
     <Preloader/>
     <Header/>
-    <Projects/>
-    <Contact/>
+  <Projects/>
+   <Contact/> 
     <Footer/>
     </div>
   );

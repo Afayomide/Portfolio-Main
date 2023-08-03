@@ -27,7 +27,7 @@
   margin-right: .7em;
 }
 .slide-in{
-  position: relative;  
+  width: 100%;
   animation: slide-in  1.75s forwards;
 
 }
@@ -44,11 +44,17 @@
 }
 .second-section{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
 }
 
+@media (max-width: 400px){
+  .black-developer{
+       width: 10em;
+
+  }
+}
 
 
 

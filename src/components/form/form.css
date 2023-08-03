@@ -21,3 +21,9 @@ form input ,textarea, button{
         width: 20em;
     }
 }
+
+@media(max-width: 400px){
+    input,textarea{
+        width: 18em;
+    }
+}
