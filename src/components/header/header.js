@@ -1,8 +1,8 @@
 import React from "react";
 import "./header.css"
 import Button from "react-bootstrap/Button"
-import jspdf from "jspdf"
 import blackdeveloper from  "../images/blackdeveloper.jpg"
+import CV from "../images/MyCV.pdf"
 
 const Developer = "</ Front-end Developer >"
 function Header(){
@@ -25,7 +25,7 @@ function Header(){
             I am proficient in Javascript, React, Html, Css, Bootstrap and I am ready to 
             work with an amazing team of developers for the right company.
         </div>
-        <Button className="button colors bg-dark d-flex justify-content-center">Download CV</Button>
+        <a href={CV} download={CV}><Button className="button colors bg-dark d-flex justify-content-center">Download CV</Button></a>
       </div>
       </div>
       </div>
