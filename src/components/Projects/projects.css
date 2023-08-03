@@ -1,0 +1,79 @@
+.projects img {
+    width: 15em;
+    height: 15em;
+}
+
+a{
+    text-decoration: none !important;
+        color: #aaa !important;
+
+}
+.projects-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.projects h3 {
+    justify-content: center;
+    display: flex;
+}
+.visit-site{
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border: white ;
+}
+.github{
+    background-color: white;
+    width: 80px;
+}
+.per-project{
+    border-radius: 1em ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-around;
+    background-color: #000000;
+    padding: 10px 0;
+    margin-bottom: 2em;
+    transition: background 0.3s ease-in-out;
+}
+.per-project button{
+    margin: 1em 0;
+    margin-left: 1em;
+    transition: background 0.3s ease-in-out;
+    border-radius: .5em;
+}
+.project-buttons{
+    display: flex;
+}
+.project-names{
+    margin: .5em 1em .5em 1em;
+    color: white;
+    font-size: 20px;
+    width: 10em;
+}
+
+   .per-project:hover{
+      background-color: #111;
+      border: .1em solid black ;
+    }
+    .visit-site:hover,.github:hover{
+        background-color: #4e4c4c;
+        color: #fff
+    }
+
+
+@media (max-width: 800px) {
+    .projects-list{
+        flex-direction: row;
+        align-items: space-between;
+        justify-content: space-between;
+
+
+    }
+
+ 
+}

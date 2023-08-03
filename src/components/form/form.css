@@ -1,0 +1,23 @@
+
+input,textarea{
+    width: 30em;
+    background-color: black;
+    margin-bottom: 1em  ;
+    border: 2px dotted  grey;
+}
+input{
+    height: 3em;
+}
+
+textarea{
+    height: 7em;
+}
+form input ,textarea, button{
+    border-radius: .5em;
+}
+
+@media(max-width: 800px){
+    input,textarea{
+        width: 30em;
+    }
+}
