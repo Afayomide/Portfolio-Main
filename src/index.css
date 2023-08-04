@@ -1,5 +1,5 @@
 .App{
-    background-color: #111;
+    background-color: #000000;
     color: #aaa;
 }
 
@@ -18,7 +18,9 @@
 body{
     scroll-behavior: smooth;
     overflow-y: auto;
+    background-color: #000000;
 }
+
 
 
 

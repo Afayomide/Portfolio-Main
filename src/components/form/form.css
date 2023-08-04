@@ -4,9 +4,11 @@ input,textarea{
     background-color: black;
     margin-bottom: 1em  ;
     border: 2px dotted  grey;
+color: white;
 }
-input{
-    height: 3em;
+
+input:active{
+    color: white;
 }
 
 textarea{

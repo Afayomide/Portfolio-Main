@@ -6,7 +6,7 @@ const projects =[
     {
         id:1,
         name:"Youtube Music Demo",
-        link:"youtubemusic-nu.vercel.app",
+        link:"https://youtubemusic-nu.vercel.app",
         imgSrc: ymusic,
         github: 'https://github.com/Afayomide/youtubemusic',
         visit: 'https://youtubemusic-nu.vercel.app/'
@@ -18,15 +18,15 @@ const projects =[
         link: 'anispa.vercel.app',
         imgSrc: anispa,
         github:'https://github.com/Afayomide/contout',
-        visit:'anispa.vercel.app'
+        visit:'https://anispa.vercel.app'
     },
     {
         id:3,
         name: 'Shopet',
-        link: 'shopet-sable.vercel.app',
+        link: 'https://shopet-sable.vercel.app',
         imgSrc: shopet,
         github: 'https://github.com/Afayomide/shopet',
-        visit: 'shopet-sable.vercel.app'
+        visit: 'https://shopet-sable.vercel.app'
 
     }
 ]

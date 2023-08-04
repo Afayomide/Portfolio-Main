@@ -1,5 +1,5 @@
 .per-contact{
-    background-color: black;  
+    background-color: #111;  
     text-align: center;
     color: grey;
     border-radius: 1em;
@@ -9,6 +9,7 @@
     padding: 1em;
     transition: background 0.5s ease-in-out;
 }
+
 
 .per-contact{
     cursor: pointer;
@@ -26,8 +27,8 @@
 }
 
 .per-contact:hover{
-    background-color: #0000;
-    border: black solid .1em;
+    background-color: #000;
+    border: #111 solid .1em;
 }
 
 .contact-form{

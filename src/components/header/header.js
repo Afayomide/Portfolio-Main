@@ -7,7 +7,7 @@ import CV from "../images/MyCV.pdf"
 const Developer = "</ Front-end Developer >"
 function Header(){
     return(
-      <div>
+      <header id="home">
       <div className="slide-in first-section">
         <h3>
         Hello World,
@@ -29,7 +29,7 @@ function Header(){
         <a href={CV} download={CV}><Button className="button colors bg-dark d-flex justify-content-center">Download CV</Button></a>
       </div>
       </div>
-      </div>
+      </header>
     )
 }
 

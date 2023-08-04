@@ -6,7 +6,7 @@ import projects from "./projectsdata";
 function Projects (){
     return(
     <div>
-        <div className="projects">
+        <div id="portfolio" className="projects">
             <h3>Featured Projects</h3>
             <div className="projects-list">
             {projects.map(projectCard)}

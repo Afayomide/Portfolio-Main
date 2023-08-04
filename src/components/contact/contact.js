@@ -6,7 +6,7 @@ import Form from "../form/form";
 
 function Contact () {
     return(
-        <div className="contact-form">
+        <div  id="contact" className="contact-form">
         <div className="contacts-parent">
             {contactData.map(ContactCard)}
         </div>
