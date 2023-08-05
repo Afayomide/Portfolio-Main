@@ -7,8 +7,14 @@ function Skills () {
 
  return(
 
-  <div>
+  <div>  
+   <div className="topics">
+      <h3 className="new-topic">My Services</h3>
+      <p className="sub-topic">What I have To Offer</p>
+    </div>
    <div className="skills">
+
+ 
     <div id="experience">
 
     <h4>Programming Language</h4>

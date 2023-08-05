@@ -5,9 +5,12 @@ import projects from "./projectsdata";
 
 function Projects (){
     return(
-    <div>
+    <div className="gen-p">
+           <div className="topics">
+      <h3 className="new-topic">Portfolio</h3>
+      <p className="sub-topic">Feaured Projects</p>
+    </div>
         <div id="portfolio" className="projects">
-            <h3>Featured Projects</h3>
             <div className="projects-list">
             {projects.map(projectCard)}
             </div>

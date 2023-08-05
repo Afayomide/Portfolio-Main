@@ -1,6 +1,13 @@
 .App{
+    scroll-behavior: smooth;
     background-color: #000000;
     color: #aaa;
+}
+
+.contents{
+    background-color: #000;
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
 }
 
 .line{
@@ -18,7 +25,20 @@
 body{
     scroll-behavior: smooth;
     overflow-y: auto;
-    background-color: #000000;
+    background-color: #111;
+}
+
+.newTopic{
+    
+}
+
+.topics{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin: 6em auto 1em auto;
+    text-align: center;
+    
 }
 
 

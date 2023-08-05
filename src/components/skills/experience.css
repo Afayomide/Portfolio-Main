@@ -17,6 +17,11 @@
     margin-bottom: 2%;
     padding: 2em 0;
 }
+#experience:hover{
+  background-color: #000;    
+  border: .1em solid #111;
+  transition: background 0.5s ease-in;
+}
 
 .experience-list{
     display: flex;
@@ -44,6 +49,19 @@
     .skills{
         flex-direction: column;
     }
+
+    #experience{
+        width: 32rem;
+    }
+    h5{
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    .check{
+        font-size: 14px;
+        color: white;
+    }
+
 }
 
 @media (max-width: 400px) {

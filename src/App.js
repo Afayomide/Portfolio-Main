@@ -11,9 +11,11 @@ function App() {
     <div className="App">
     <Preloader/>
     <Header/>
-  <Projects/>
-  <Skills/>
+    <div className='contents'>
+  <Skills/> 
+   <Projects/>
    <Contact/> 
+   </div>
     <Footer/>
     </div>
   );

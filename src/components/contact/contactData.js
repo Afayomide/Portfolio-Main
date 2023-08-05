@@ -1,6 +1,10 @@
-import whatsapp from "../images/whatsapp.svg"
-import twitter from "../images/twitter.svg"
-import envelope from "../images/email.svg"
+import  { BsWhatsapp }  from "react-icons/bs"
+import {BsTwitter} from "react-icons/bs"
+import { BsEnvelope } from "react-icons/bs"
+
+const whatsapp = <BsWhatsapp/>
+const envelope=<BsEnvelope/>
+const twitter=<BsTwitter/>
 
 const contactData= [
     {

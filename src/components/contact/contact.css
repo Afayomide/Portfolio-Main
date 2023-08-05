@@ -3,7 +3,6 @@
     text-align: center;
     color: grey;
     border-radius: 1em;
-    border: none solid .5px;
     width: 20em;
     margin-bottom: 20px;
     padding: 1em;
@@ -11,10 +10,6 @@
 }
 
 
-.per-contact{
-    cursor: pointer;
-    color: white;
-}
 
 .per-contact img{
     width: 30px;
