@@ -86,11 +86,11 @@ a{
  
 }
 
-@media (max-width: 800px) {
+@media (max-width: 400px) {
 
 
     .projects img {
-        width: 18em;
+        width: 16em;
 
         height: 17em;
     }

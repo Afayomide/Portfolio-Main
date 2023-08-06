@@ -1,19 +1,22 @@
 footer{
-    background-color: #5d0000;
+    background-color: #5b5b5b;
     text-align: center;
+    color: black;
+    margin-top: 2em;
 
 }
 
 .footer-links{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-auto-flow: column;   
+    gap: 1px;
 }
 .footer-links a{
-    margin-left: 1.5em;
+    
 }
 
 @media(max-width: 400px) {
     .footer-links{
-        flex-direction: column;
+      grid-auto-flow: row;
     }
 }
