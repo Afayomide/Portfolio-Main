@@ -5,7 +5,15 @@ import "./background.css"
 function Background(){
     return(
         <div className="backvid">
-    <video src={backvid} loop autoPlay={true} muted type="video/mp4" />
+    <video src={backvid} 
+    
+    loop 
+    playInBackground={true}
+    playWhenInactive= {true}
+    ignoreSilentSwitch="ignore"
+     autoPlay={true} 
+     muted 
+     type="video/mp4" />
         </div>
     )
 }
