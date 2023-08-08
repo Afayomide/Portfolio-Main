@@ -13,6 +13,7 @@ function Background(){
     ignoreSilentSwitch="ignore"
      autoPlay={true} 
      muted 
+     playsInline={true}
      type="video/mp4" />
         </div>
     )
