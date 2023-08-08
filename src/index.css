@@ -1,11 +1,14 @@
 .App{
     scroll-behavior: smooth;
-    background-color: #000000;
     color: #aaa;
+}
+.elements{
+    z-index: 100;
+    position: absolute;
+
 }
 
 .contents{
-    background-color: #000;
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
 }
@@ -25,7 +28,8 @@
 body{
     scroll-behavior: smooth;
     overflow-y: auto;
-    background-color: #111;
+    background-color: #111;width:100%;
+    max-width: 1000px;
 }
 
 .newTopic{

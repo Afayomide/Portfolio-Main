@@ -1,0 +1,24 @@
+video{
+    width: 100vh;
+    height: 100%;
+      z-index: 10;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+
+opacity: 0.5;
+margin:0;
+    transform: rotate(90deg);
+}
+
+.backvid{
+    margin: 0;
+
+   
+}
+
+@media (max-width: 500px){
+    video{
+        transform: rotate(360deg)
+      }
+}

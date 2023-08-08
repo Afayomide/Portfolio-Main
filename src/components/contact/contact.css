@@ -1,5 +1,6 @@
-.per-contact{
-    background-color: #111;  
+.per-contact{    
+    background-color: #1111;
+    border: #000 solid .1em;
     text-align: center;
     color: grey;
     border-radius: 1em;
@@ -22,8 +23,7 @@
 }
 
 .per-contact:hover{
-    background-color: #000;
-    border: #111 solid .1em;
+    background-color: #000000;  
 }
 
 .contact-form{
@@ -49,4 +49,11 @@
     .per-contact{
         width: 17em;
     }
+}
+
+@media (max-width: 350px) {
+    #experience{
+     width: 14rem;
+     font-size: 8px;
+ }
 }
