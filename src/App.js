@@ -11,12 +11,12 @@ function App() {
   return (
     <div className="App">
 
+  
     <Background className="background"/> 
 
 
-    <div className='elements'>     
-    <Preloader/> 
-
+    <div className='elements'>        
+<Preloader/>
 
     <Header/> 
     <div className='contents'>

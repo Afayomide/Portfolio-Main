@@ -1,22 +1,32 @@
 footer{
-    background-color: #5b5b5b;
+    background-color: #1111;
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
     margin-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 100px;
 
 }
 
 .footer-links{
-    display: grid;
-    grid-auto-flow: column;   
-    gap: 1px;
+    display: flex;
+flex-direction: row;    
+justify-content: space-between;
 }
-.footer-links a{
-    
+.footer-icons a {
+    margin-right: 20px;
 }
+
 
 @media(max-width: 400px) {
     .footer-links{
-      grid-auto-flow: row;
+        display: flex;
+        flex-direction: column;
+      margin-bottom: 10px;
+    }
+    footer{
+        margin: 0px;
     }
 }

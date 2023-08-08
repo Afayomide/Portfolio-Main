@@ -5,6 +5,7 @@
 .elements{
     z-index: 100;
     position: absolute;
+height: 100vh;
 
 }
 
@@ -28,13 +29,11 @@
 body{
     scroll-behavior: smooth;
     overflow-y: auto;
-    background-color: #111;width:100%;
+    background-color: #111;
+    width:100vh;
     max-width: 1000px;
-}
+margin: 0;}
 
-.newTopic{
-    
-}
 
 .topics{
     display: grid;

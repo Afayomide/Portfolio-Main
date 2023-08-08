@@ -18,7 +18,7 @@ function Footer(){
                 
                 </div>
 
-                <div>
+                <div className="footer-icons">
 
                     <a href="https://www.instagram.com/seyi.webdev/"><FiInstagram/></a>
                     <a href="https://www.linkedin.com/in/afayomide-oluwaseyi-849251161/"><BsLinkedin/></a>
