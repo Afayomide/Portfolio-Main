@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./header.css"
 import Button from "react-bootstrap/Button"
 import blackdeveloper from  "../images/blackdeveloper.jpg"
-import CV from "../images/MyCV.pdf"
+import CV from "../images/Afayomide.pdf"
 import Typewriter from "../typewriter/typewriter";
 import Aos from "aos";
 import "aos/dist/aos.css"
