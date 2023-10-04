@@ -1,0 +1,98 @@
+
+.first-section{
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+header{
+  margin-bottom: none;
+  padding-bottom: none;
+  text-align: center;
+}
+@keyframes slide-in {
+
+  0%{
+    right: 55em;
+    ; opacity: 20;
+  }
+  50%{
+    right: 55em;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+.about{
+  color: #777;
+  margin-right: .7em;
+}
+.slide-in{
+  width: 100%;
+  animation: slide-in  1.75s forwards;
+
+}
+.nice-p{
+  padding-top: 40px;
+
+  font-weight: 300;
+  font-size: 2em;
+  font-family: cursive;
+}
+.about-me{
+  margin-top: 20px;
+  font-size: 15px;
+  width: 50%;
+  word-spacing: 1px;
+}
+.black-developer{
+  width: 15em;
+ height: 16em;
+  border-radius: 2em;
+}
+.second-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h3, h2{
+  font-size: 1em;
+}
+
+@media (max-width: 500px){
+  h1, header h2{
+    font-size: smaller;
+  }
+  .black-developer{
+    
+       width: 10em;
+       height: 10em;
+
+  }
+  .nice-p{
+    font-weight: 200;
+    font-size: 1em;
+    font-family: cursive;
+  }
+  .about-me{
+    width: 80%;
+    font-size: 14px;
+
+  }
+  .first-section{
+    padding-top: 30px;
+  }
+
+}
+
+
+
+
+
