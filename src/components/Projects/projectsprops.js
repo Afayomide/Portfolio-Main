@@ -11,7 +11,7 @@ function projectCard(props){
         <h4 className="project-names">
         {name}
         </h4> 
-        <img src={imgSrc}/>
+        <img loading="lazy" src={imgSrc}/>
         </a>
         </div>
     
