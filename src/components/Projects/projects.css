@@ -3,7 +3,9 @@
     width: 15em;
     height: 15em;
 }
-
+.projects{
+    width:90%;
+}
 a{
     text-decoration: none !important;
         color: #aaa !important;
@@ -14,7 +16,7 @@ a{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     flex-wrap: wrap;
     
 }
