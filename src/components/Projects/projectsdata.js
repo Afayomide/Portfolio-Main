@@ -6,6 +6,22 @@ import mk from "../images/mk.jpeg"
 
 const projects =[   
     {
+        id:5,
+        name: 'LAHNI',
+        link: 'https://lahni.shop',
+        // imgSrc: mk,
+        github:'https://github.com/Afayomide',
+        visit:'https://lahni.shop'
+    },
+    {
+        id:5,
+        name: 'Dex Sniffer',
+        link: 'https://dexsniffer.io',
+        // imgSrc: mk,
+        github:'https://github.com/Afayomide',
+        visit:'https://dexsniffer.io'
+    },
+    {
         id:1,
         name: 'MK Signature',
         link: 'https://mksignature.store',
