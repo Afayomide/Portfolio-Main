@@ -12,8 +12,14 @@ a{
 .projects-list{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
     
+}
+iframe{
+    height: 30rem;
 }
 .projects h3 {
     justify-content: center;
@@ -31,6 +37,7 @@ a{
     width: 80px;
 }
 .per-project{
+    margin: 0 5rem;
     border-radius: 1em ;
     display: flex;
     flex-direction: column;
