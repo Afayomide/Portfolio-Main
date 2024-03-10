@@ -10,9 +10,9 @@ import CV from "../images/Afayomide.pdf"
 import Typewriter from "../typewriter/typewriter";
 import Aos from "aos";
 import "aos/dist/aos.css"
+import { BsPencilFill } from "react-icons/bs";
 
-
-const Developer = "</ Front-end Developer >"
+const Developer = `</ Fullstack Developer > And A Writer`
 function Header(){
 
 useEffect(()=>{
@@ -26,7 +26,7 @@ useEffect(()=>{
         Hello World,
         </h3>
         <h1>I'm Afayomide Daramola</h1>
-        <h2><Typewriter text={Developer} delay={100}/></h2>
+        <h2><Typewriter text={Developer} delay={100}/> <BsPencilFill/></h2>
         </div> 
         <div className="second-section">
         <div className="image">
@@ -36,11 +36,12 @@ useEffect(()=>{
  <p> Hello Nice To Have You here</p>
 </div>
         <div  className="about-me">
-            <p><span className="about">About</span>I am a Front-end web developer from Lagos, Nigeria.
-            I am proficient in Javascript, React, Html, Css, Bootstrap. Merging coding with creativity, I am ready to 
+            <p><span className="about">About</span>I am a FullStack developer from Lagos, Nigeria.
+            I am proficient in Javascript, React,React Native, Node, mongo, python, Html, Css, Bootstrap. Merging coding with creativity, I am ready to 
             work with an amazing team of developers for the right company.
         </p>
         <a href={CV} download={CV}><button className="">Download CV</button></a>
+
       </div>
       </div>
       </header>
