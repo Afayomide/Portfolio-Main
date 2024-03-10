@@ -17,48 +17,48 @@ function Skills () {
  
     <div id="experience">
 
-    <h4>Programming Language</h4>
+    <h4>Frame Works</h4>
 
 <div className="experience-container">
 
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>Html</h5>
+      <h5>React</h5>
     </div>
     </div>
 
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>css</h5>
+      <h5>React Native</h5>
     </div>
     </div>
 
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>Javascript</h5>
+      <h5>Express(Node) / MongoDB</h5>
     </div>
     </div>
 
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>Typescript</h5>
+      <h5>Django</h5>
     </div>
     </div>
 
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>React JS</h5>
+      <h5>Tailwind</h5>
     </div>
     </div>
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>Next Js</h5>
+      <h5>Bootstrap</h5>
     </div>
     </div>
 </div>
@@ -66,44 +66,32 @@ function Skills () {
 
 <div id="experience">
 
-<h4>Frame Work</h4>
+<h4>Programming Languages</h4>
 
 <div className="experience-container">
 
 <div className="experience-list">
 <BsPatchCheckFill className="check"/>
    <div>
-  <h5>Bootstrap</h5>
+  <h5>Javascript</h5>
 </div>
 </div>
 
 <div className="experience-list">
 <BsPatchCheckFill className="check"/>
    <div>
-  <h5>Tailwind</h5>
+  <h5>Python</h5>
 </div>
 </div>
 
 <div className="experience-list">
 <BsPatchCheckFill className="check"/>
    <div>
-  <h5>Material UI</h5>
+  <h5>Typescript</h5>
 </div>
 </div>
 
-<div className="experience-list">
-<BsPatchCheckFill className="check"/>
-   <div>
-  <h5>Responsive Design</h5>
-</div>
-</div>
 
-<div className="experience-list">
-<BsPatchCheckFill className="check"/>
-   <div>
-  <h5>Redux</h5>
-</div>
-</div>
 
 </div>
 </div>
