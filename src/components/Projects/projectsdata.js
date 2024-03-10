@@ -22,6 +22,14 @@ const projects =[
         visit:'https://dexsniffer.io'
     },
     {
+        id:6,
+        name: 'Adot Advisor',
+        link: 'https://adotadvisor.vercel.app',
+        // imgSrc: mk,
+        github:'https://github.com/Afayomide/adotadvisor',
+        visit:'https://adotadvisor.vercel.app'
+    },
+    {
         id:1,
         name: 'MK Signature',
         link: 'https://mksignature.store',
@@ -56,7 +64,7 @@ const projects =[
         visit: 'https://shopet-sable.vercel.app'
 
     },
-   
+ 
 ]
 
 export default projects

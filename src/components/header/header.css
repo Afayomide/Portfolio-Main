@@ -51,9 +51,9 @@ header{
   word-spacing: 1px;
 }
 .black-developer{
-  width: 15em;
- height: 16em;
-  border-radius: 2em;
+  width: 14em;
+ height: 15em;
+  border-radius: 50%;
 }
 .second-section{
   display: flex;
