@@ -9,7 +9,7 @@ function Skills () {
 
   <div>  
    <div className="topics">
-      <h3 className="new-topic">My Services</h3>
+      <h3 className="new-topic">My Skills</h3>
       <p className="sub-topic">What I have To Offer</p>
     </div>
    <div className="skills">
@@ -17,7 +17,7 @@ function Skills () {
  
     <div id="experience">
 
-    <h4>Frame Works</h4>
+    <h4>Frontend</h4>
 
 <div className="experience-container">
 
@@ -38,27 +38,14 @@ function Skills () {
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>Express(Node) / MongoDB</h5>
+      <h5>Nextjs</h5>
     </div>
     </div>
 
     <div className="experience-list">
 <BsPatchCheckFill className="check"/>
        <div>
-      <h5>Django</h5>
-    </div>
-    </div>
-
-    <div className="experience-list">
-<BsPatchCheckFill className="check"/>
-       <div>
-      <h5>Tailwind</h5>
-    </div>
-    </div>
-    <div className="experience-list">
-<BsPatchCheckFill className="check"/>
-       <div>
-      <h5>Bootstrap</h5>
+      <h5>vuejs</h5>
     </div>
     </div>
 </div>
@@ -66,35 +53,48 @@ function Skills () {
 
 <div id="experience">
 
-<h4>Programming Languages</h4>
+<h4>Backend</h4>
 
 <div className="experience-container">
 
 <div className="experience-list">
 <BsPatchCheckFill className="check"/>
    <div>
-  <h5>Javascript</h5>
+  <h5>Nodejs</h5>
 </div>
 </div>
 
 <div className="experience-list">
 <BsPatchCheckFill className="check"/>
    <div>
-  <h5>Python</h5>
+  <h5>Express</h5>
 </div>
 </div>
 
 <div className="experience-list">
 <BsPatchCheckFill className="check"/>
    <div>
-  <h5>Typescript</h5>
+  <h5>Nest</h5>
 </div>
 </div>
 
+<div className="experience-list">
+<BsPatchCheckFill className="check"/>
+   <div>
+  <h5>postgreSQL</h5>
+</div>
+</div>
 
+<div className="experience-list">
+<BsPatchCheckFill className="check"/>
+   <div>
+  <h5>MongoDB</h5>
+</div>
+</div>
 
 </div>
 </div>
+
 </div>
 
 

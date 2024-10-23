@@ -1,0 +1,24 @@
+/* CustomCursor.css */
+.custom-cursor {
+    position: fixed; /* Use fixed positioning to follow the viewport */
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    border: 2px solid #ffffff; /* Cursor color */
+    border-radius: 50%; /* Round cursor */
+    pointer-events: none; /* Prevent the cursor from blocking other events */
+    transform: translate(-50%, -50%); /* Center the cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    z-index: 9999; /* Ensure the cursor is on top of other elements */
+  }
+  
+  /* Optional hover effect */
+  .custom-cursor:hover {
+    background-color: #ffffff; /* Change color on hover */
+    transform: translate(-50%, -50%) scale(1.5); /* Scale effect on hover */
+  }
+  
+  /* Hide default cursor */
+  body {
+    cursor: none; /* Hide the default cursor */
+  }
+  

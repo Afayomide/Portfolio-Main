@@ -50,11 +50,11 @@ iframe{
     flex-direction: column;
     justify-content: space-around;
     align-items: space-around;
-    background-color: #1111;
+    background-color: #2b2c2f;
     padding: 10px 0;
     margin-bottom: 2em;
     transition: background 0.3s ease-in-out;
-    border: #111 3px solid
+    border: #2b2c2f 3px solid
 }
 .per-project button{
     margin: 1em 0;
@@ -73,7 +73,7 @@ iframe{
 }
 
    .per-project:hover{
-      background-color: #000;
+      background-color: #1111;
       border: .1em solid #111 ;
     }
     .visit-site:hover,.github:hover{

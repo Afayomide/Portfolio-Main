@@ -9,7 +9,7 @@ function ContactCard (props){
 
     const Icon =icon
     return(
-    <div className="per-contact">
+    <div className="per-contact" key={id}>
         
        <div>
          {icon}
