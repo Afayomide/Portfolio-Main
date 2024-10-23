@@ -13,7 +13,7 @@ function Education() {
         setDisplayDetails((prev) => !prev)
     }
     return (
-      <div className="education">
+      <div className="education" id="education">
         <div className="list-indent">
           <IoSchoolSharp/>
         </div>

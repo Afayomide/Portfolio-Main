@@ -12,7 +12,7 @@ function Experience() {
         setDisplayDetails((prev) => !prev)
     }
     return (
-      <div className="experience">
+      <div className="experience" id="experience">
         <div className="list-indent">
           <BsStar />
         </div>
