@@ -12,7 +12,6 @@
 header{
   margin-bottom: none;
   padding-bottom: none;
-  text-align: center;
 }
 @keyframes slide-in {
 
@@ -46,14 +45,15 @@ header{
 }
 .about-me{
   margin-top: 20px;
-  font-size: 15px;
-  width: 50%;
+  font-size: 1rem;
+  width: 30%;
   word-spacing: 1px;
 }
 .black-developer{
   width: 14em;
- height: 15em;
+ height: 17em;
   border-radius: 50%;
+  animation: float 3s ease-in-out infinite; /* Apply the animation */
 }
 .second-section{
   display: flex;
@@ -66,6 +66,17 @@ header h3, h2{
   font-size: 1em;
 }
 
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px); /* Move up by 20px */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
 @media (max-width: 500px){
   h1, header h2{
     font-size: smaller;
@@ -91,8 +102,6 @@ header h3, h2{
   }
 
 }
-
-
 
 
 

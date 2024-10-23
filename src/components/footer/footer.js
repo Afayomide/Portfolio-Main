@@ -6,7 +6,7 @@ import { BsLinkedin } from 'react-icons/bs'
 function Footer(){
     return(
         <footer>
-                <h3>Afayomide Oluwaseyi</h3>
+                <h3>Chris Afayomide</h3>
                 <div className="footer-links">
                  <a href="#home"> Home</a>
                 <a href="#home">About</a>

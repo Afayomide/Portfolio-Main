@@ -11,16 +11,17 @@
 }
 
 #experience{
-    background-color: #1111;   
+    background-color: #c2baba;   
      border: .1em solid #000;
-
-    width: 30em;
+    color: black;
+    width: 40vw;
     border-radius: 2em;
     margin-bottom: 2%;
     padding: 2em 0;
+    height: 20em;
 }
 #experience:hover{
-  background-color: #000;    
+  background-color: #fff;    
   transition: background 0.5s ease-in;
 }
 
@@ -47,16 +48,21 @@
 
 @media(max-width: 990px){
     #experience{
-     width: 25em;
+     width: 20em;
     }
+    .about-me{
+        width: 50%;
+     }
 }
 @media (max-width: 800px) {
     .skills{
+        width: 100vw;
         flex-direction: column;
     }
 
     #experience{
         width: 25rem;
+        height: auto;
     }
     h5{
         margin-bottom: 0;
@@ -66,7 +72,9 @@
         font-size: 14px;
         color: white;
     }
-
+    .about-me{
+        width: 80%;
+     }
 }
 
 @media (max-width: 420px) {

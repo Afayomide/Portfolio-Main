@@ -4,15 +4,14 @@ import Preloader from './components/preloader/preloader';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Skills from './components/skills/skills';
-import Background from './components/background/background';
+import CustomCursor from './components/cursor/customCursor';
 
 
 function App() {
   return (
     <div className="App">
 
-  
-    <Background className="background"/> 
+  <CustomCursor/>
 
 
     <div className='elements'>        

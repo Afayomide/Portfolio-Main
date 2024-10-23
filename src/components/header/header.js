@@ -1,16 +1,13 @@
 import React from "react";
 import { useEffect } from "react";
-import { useRef } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./header.css"
-import Button from "react-bootstrap/Button"
 import blackdeveloper from  "../images/blackdeveloper.jpg"
-import CV from "../images/Afayomide.pdf"
+import CV from "../images/chrisnpdf.pdf"
 import Typewriter from "../typewriter/typewriter";
 import Aos from "aos";
 import "aos/dist/aos.css"
 import { BsPencilFill } from "react-icons/bs";
+import RippleButton from "../rippleButton/rippleButton";
 
 const Developer = `</ Fullstack Developer > And A Writer`
 function Header(){
@@ -25,7 +22,7 @@ useEffect(()=>{
         <h3>
         Hello World,
         </h3>
-        <h1>I'm Afayomide Daramola</h1>
+        <h1>I'm Chris Afayomide</h1>
         <h2><Typewriter text={Developer} delay={100}/> <BsPencilFill/></h2>
         </div> 
         <div className="second-section">
@@ -36,12 +33,15 @@ useEffect(()=>{
  <p> Hello Nice To Have You here</p>
 </div>
         <div  className="about-me">
-            <p><span className="about">About</span>I am a FullStack developer from Lagos, Nigeria.
-            I am proficient in Javascript, React,React Native, Node, mongo, python, Html, Css, Bootstrap. Merging coding with creativity, I am ready to 
-            work with an amazing team of developers for the right company.
+            <p><span className="about">About</span>I am a FullStack developer 🧠 from Lagos, Nigeria.<br/>
+              A <span>music lover 🎵</span> and A huge fan of the show <span>The Big Bang Theory 🍿</span><br/>
+              I enjoy <span>writing ✍️</span>, and I love <span>working out 💪</span><br/>
+              I am skilled in both frontend and backend technologies<br/>
         </p>
-        <a href={CV} download={CV}><button className="">Download CV</button></a>
-
+        <p>
+          I am also a freak when it comes to writing modular and conscice code  
+        </p>
+        <a href={CV} download={CV}><RippleButton className="">Download CV</RippleButton></a>
       </div>
       </div>
       </header>

@@ -6,9 +6,8 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin: 0 100px;
-    padding: 3rem 0;
-
+    margin: 100px 0;
+    padding: 3rem 1rem;
 }
 
 .footer-links{

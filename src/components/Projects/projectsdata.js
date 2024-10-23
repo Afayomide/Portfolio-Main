@@ -6,57 +6,43 @@ import mk from "../images/mk.jpeg"
 
 const projects =[   
     {
-        id:5,
-        name: 'LAHNI',
-        link: 'https://lahni.shop',
+        id:1,
+        name: 'Plusworld',
+        link: 'https://plusworld.vercel.app',
         // imgSrc: mk,
         github:'https://github.com/Afayomide',
-        visit:'https://lahni.shop'
+        visit:'https://plusworld.vercel.app'
     },
     {
-        id:5,
-        name: 'Dex Sniffer',
-        link: 'https://dexsniffer.io',
+        id:2,
+        name: 'Afro Royals',
+        link: 'https://afrifashion.vercel.app',
         // imgSrc: mk,
-        github:'https://github.com/Afayomide',
-        visit:'https://dexsniffer.io'
+        github:'https://github.com/Afayomide/afrifashion',
+        visit:'https://afrifashion.vercel.app'
     },
     {
-        id:6,
+        id:3,
+        name:"Audet Blog",
+        link:"https://audet.vercel.app",
+        imgSrc: ymusic,
+        github: 'https://github.com/Afayomide',
+        visit: 'https://audet.vercel.app'
+        
+    },
+    {
+        id:4,
         name: 'Adot Advisor',
         link: 'https://adotadvisor.vercel.app',
         // imgSrc: mk,
         github:'https://github.com/Afayomide/adotadvisor',
         visit:'https://adotadvisor.vercel.app'
     },
-    {
-        id:1,
-        name: 'MK Signature',
-        link: 'https://mksignature.store',
-        imgSrc: mk,
-        github:'https://github.com/Afayomidet',
-        visit:'https://mksignature.store'
-    }, 
-    {
-        id:2,
-        name:"Youtube Music Demo",
-        link:"https://youtubemusic-nu.vercel.app",
-        imgSrc: ymusic,
-        github: 'https://github.com/Afayomide/youtubemusic',
-        visit: 'https://youtubemusic-nu.vercel.app/'
-        
-    },
+
+    
 
     {
-        id:3,
-        name: "bruna",
-        link: "https://brunajewelry.com.ng",
-        imgSrc: bruna,
-        github: "https://github.com/Afayomide",
-        visit: "https://brunajewelry.com.ng"
-    },
-    {
-        id:4,
+        id:5,
         name: 'Shopet',
         link: 'https://shopet-sable.vercel.app',
         imgSrc: shopet,

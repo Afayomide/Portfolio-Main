@@ -4,7 +4,7 @@ import React from "react"
 function projectCard(props){
     const{id, name, link,imgSrc,github,visit} = props
     return(
-        <div className="per-project">
+        <div className="per-project" key={id}>
 
         <div>
         <a href={link}>
