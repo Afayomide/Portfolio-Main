@@ -4,7 +4,7 @@ export const Data = [
         to: "Present",
         title: "Full Stack Developer",
         company: "Plusworld Roofing Limited",
-        details: `I am building the web app for the Plusworld Academy learning platform to teach construction courses.\n
+        details: `I help to manage the existing technical products of plusworld roofing and I am also currently building a platform where users can learn courses about real estate and construction.\n
         `
     },
     {
