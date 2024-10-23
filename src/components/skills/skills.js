@@ -91,6 +91,12 @@ function Skills () {
   <h5>MongoDB</h5>
 </div>
 </div>
+<div className="skills-list">
+<BsPatchCheckFill className="check"/>
+   <div>
+  <h5>AWS</h5>
+</div>
+</div>
 
 </div>
 </div>
