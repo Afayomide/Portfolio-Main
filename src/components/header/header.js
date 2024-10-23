@@ -22,7 +22,7 @@ useEffect(()=>{
         <h3>
         Hello World,
         </h3>
-        <h1>I'm Chris Afayomide</h1>
+        <h1>I'm <span>Chris</span> Afayomide</h1>
         <h2><Typewriter text={Developer} delay={100}/> <BsPencilFill/></h2>
         </div> 
         <div className="second-section">
