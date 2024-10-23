@@ -1,15 +1,15 @@
-import anispa from "../images/anispa.jpg"
-import ymusic from "../images/ymusic.jpg"
 import shopet from '../images/shopet.jpg'
-import bruna from "../images/bruna.jpeg"
-import mk from "../images/mk.jpeg"
+import plusworld from "../images/plusworld.png"
+import audet from "../images/audet.png"
+import afroroyals from "../images/afroroyals.png"
+import adot from "../images/adot.png"
 
 const projects =[   
     {
         id:1,
         name: 'Plusworld',
         link: 'https://plusworld.vercel.app',
-        // imgSrc: mk,
+        imgSrc: plusworld,
         github:'https://github.com/Afayomide',
         visit:'https://plusworld.vercel.app'
     },
@@ -17,7 +17,7 @@ const projects =[
         id:2,
         name: 'Afro Royals',
         link: 'https://afrifashion.vercel.app',
-        // imgSrc: mk,
+        imgSrc: afroroyals,
         github:'https://github.com/Afayomide/afrifashion',
         visit:'https://afrifashion.vercel.app'
     },
@@ -25,7 +25,7 @@ const projects =[
         id:3,
         name:"Audet Blog",
         link:"https://audet.vercel.app",
-        imgSrc: ymusic,
+        imgSrc: audet,
         github: 'https://github.com/Afayomide',
         visit: 'https://audet.vercel.app'
         
@@ -34,7 +34,7 @@ const projects =[
         id:4,
         name: 'Adot Advisor',
         link: 'https://adotadvisor.vercel.app',
-        // imgSrc: mk,
+        imgSrc: adot,
         github:'https://github.com/Afayomide/adotadvisor',
         visit:'https://adotadvisor.vercel.app'
     },

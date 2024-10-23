@@ -11,13 +11,13 @@ function projectCard(props){
         <h4 className="project-names">
         {name}
         </h4> 
-        {/* <img loading="lazy" src={imgSrc}/> */}
-        <iframe src={link}
+        <img loading="lazy" src={imgSrc}/>
+        {/* <iframe src={link}
             sandbox='allow-scripts allow-modal' 
             loading='lazy'  
 >
 
-        </iframe>
+        </iframe> */}
         </a>
         </div>
     

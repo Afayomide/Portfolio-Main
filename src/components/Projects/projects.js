@@ -13,9 +13,9 @@ function Projects (){
       <p className="sub-topic">Feaured Projects</p>
     </div>
     <div className="portfolio-buttons">
-        <a href="https://expo.dev/artifacts/eas/b8mPTy5RpjNy1SgpWQyeTH.apk" ><button >Download My React Native Apk file</button></a>
+        {/* <a href="https://expo.dev/artifacts/eas/b8mPTy5RpjNy1SgpWQyeTH.apk" ><button >Download My React Native Apk file</button></a> */}
         <br/>
-        <a href={Book} download={Book}><button >Download My Book</button></a>
+        <a href={Book} download={Book}><button >Download My Book On Fitness(Free)</button></a>
     </div>
         <div id="portfolio" className="projects">
             <div className="projects-list">

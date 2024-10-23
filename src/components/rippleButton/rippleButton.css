@@ -19,7 +19,7 @@
     border-radius: 10rem; /* Rounded corners */
     border: none;
     transition: background-color 0.3s ease; /* Background transition */
-
+    padding: .5rem 1.5rem;
   }
   .ripple-button:hover {
     background-color: #2980b9; /* Darker background on hover */
@@ -40,28 +40,27 @@
   width: 150px;
   height: 150px;
   background: rgba(255, 255, 255, 0.3);
-  animation: ripple-blink 3s infinite;
-}
+  animation: ripple-blink 1.2s infinite .2s;}
 
 .ripple2 {
   width: 180px;
   height: 180px;
-  background: rgba(15, 14, 14, 0.3);
-  animation: ripple-blink 3s infinite 1s; /* Starts after 1s delay */
+  background: rgba(255, 255, 255, 0.1);
+  animation: ripple-blink 1.2s infinite 1.2s; /* Starts after 1s delay */
 }
 
 .ripple3 {
   width: 210px;
   height: 210px;
   background: rgba(255, 255, 255, 0.2);
-  animation: ripple-blink 3s infinite 2s; /* Starts after 2s delay */
+  animation: ripple-blink 1.2s infinite 2.2s; /* Starts after 2s delay */
 }
 
 .ripple4 {
   width: 240px;
   height: 240px;
-  background: rgba(255, 255, 255, 0.1);
-  animation: ripple-blink 3s infinite 3s; /* Starts after 3s delay */
+  background: rgba(204, 202, 202, 0.1);
+  animation: ripple-blink 1.2s infinite 3.2s; /* Starts after 3s delay */
 }
 
 /* Ripple effect animation */

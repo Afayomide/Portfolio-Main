@@ -5,7 +5,7 @@ import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import Skills from './components/skills/skills';
 import CustomCursor from './components/cursor/customCursor';
-
+import Experience from './components/experience/experience';
 
 function App() {
   return (
@@ -15,11 +15,12 @@ function App() {
 
 
     <div className='elements'>        
-<Preloader/>
+{/* <Preloader/> */}
 
     <Header/> 
     <div className='contents'>
   <Skills/>
+  <Experience/>
     <Projects/> 
     <Contact/>
        </div>
