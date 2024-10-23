@@ -12,6 +12,7 @@ import Education from './components/education/education';
 import { FaPlay } from "react-icons/fa";
 import { FaPause } from "react-icons/fa6";
 import { Toaster,toast } from "react-hot-toast";
+import SideBar from './components/sidebar/sideBar';
 
 
 function App() {
@@ -53,7 +54,7 @@ function App() {
 
     <div className='elements'>        
 <Preloader/>
-
+<SideBar/>
     <Header/> 
     <div className='contents'>
   <Skills/>
