@@ -2,7 +2,8 @@
 .ripple-container {
     position: relative;
     display: inline-block; /* Ensure the button wraps around the container */
-    overflow: visible; /* Hide overflow for ripple effects */
+    overflow: hidden; /* Hide overflow for ripple effects */
+    border-radius: 0.5rem;
 
   }
   
@@ -16,7 +17,7 @@
   .ripple-button{
     background-color: #3498db; /* Button background color */
     color: white; /* Button text color */
-    border-radius: 10rem; /* Rounded corners */
+    border-radius: 0.5rem; /* Rounded corners */
     border: none;
     transition: background-color 0.3s ease; /* Background transition */
     padding: .5rem 1.5rem;
@@ -40,7 +41,7 @@
   width: 150px;
   height: 150px;
   background: rgba(255, 255, 255, 0.3);
-  animation: ripple-blink 1.2s infinite .2s;}
+  animation: ripple-blink 1.2s infinite ;}
 
 .ripple2 {
   width: 180px;

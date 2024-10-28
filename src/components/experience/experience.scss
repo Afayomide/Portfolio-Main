@@ -45,11 +45,14 @@
       h5 {
         color: #54595f;
       }
-      p{
-        text-align: right;
-      }
+      
       .experience-info{
         width: 100%;
+        a:hover{
+        h4{
+          color:white
+        }
+      }
       }
       .details-container{
         position: relative;
@@ -71,6 +74,7 @@
             small{
                 text-align: end;
             }
+           
          }
          .none-details{
             background-color: black;     

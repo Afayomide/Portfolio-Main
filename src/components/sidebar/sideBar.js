@@ -37,27 +37,39 @@ function SideBar() {
         <div className={`side-bar-container ${isVisible ? "side-bar-none" : "side-bar-visible"}`}>
         <div>
         <div className="bar-link-container">
-                <a href="#home"><FcAbout className="bar-icons"/><span className="bar-text">About</span></a>
+                <a href="#home"><FcAbout className="bar-icons"/>
+                {/* <span className="bar-text">About</span> */}
+                </a>
             </div>
             <div className="vl"></div>
             <div className="bar-link-container">
-                <a href="#skills"><GiBrain className="bar-icons"/><span className="bar-text">Skills</span></a>
+                <a href="#skills"><GiBrain className="bar-icons"/>
+                {/* <span className="bar-text">Skills</span> */}
+                </a>
             </div>
             <div className="vl"></div>
             <div className="bar-link-container">
-                <a href="#experience"><FaHardHat className="bar-icons"/><span className="bar-text">Experience</span></a>
+                <a href="#experience"><FaHardHat className="bar-icons"/>
+                {/* <span className="bar-text">Experience</span> */}
+                </a>
             </div>
             <div className="vl"></div>
             <div className="bar-link-container">
-                <a href="#education"><IoSchoolSharp className="bar-icons"/><span className="bar-text">Education</span></a>
+                <a href="#education"><IoSchoolSharp className="bar-icons"/>
+                {/* <span className="bar-text">Education</span> */}
+                </a>
             </div>
             <div className="vl"></div>
             <div className="bar-link-container">
-                <a href="#portfolio"><IoCreateSharp className="bar-icons"/><span className="bar-text">Projects</span></a>
+                <a href="#portfolio"><IoCreateSharp className="bar-icons"/>
+                {/* <span className="bar-text">Projects</span> */}
+                </a>
             </div>
             <div className="vl"></div>
             <div className="bar-link-container">
-                <a href="#contact">< FcContacts className="bar-icons"/><span className="bar-text">Contact</span></a>
+                <a href="#contact">< FcContacts className="bar-icons"/>
+                {/* <span className="bar-text">Contact</span> */}
+                </a>
             </div>
         </div>
         </div>

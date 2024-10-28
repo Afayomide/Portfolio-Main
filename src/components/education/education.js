@@ -32,7 +32,7 @@ function Education() {
                 <small onClick={handleDisplayDetails}><BsX/></small>
                 <p className="">
                     {props.details}
-                   {props.url ? <a href={props.url}> here</a> : ""} 
+                   {props.url ? <a className="here" href={props.url}> here</a> : ""} 
                 </p>
             </div>
             </div>

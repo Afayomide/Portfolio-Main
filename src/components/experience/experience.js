@@ -1,39 +1,44 @@
 import { Data } from "./experienceData";
 import "./experience.scss";
-import { BsStar, BsX} from "react-icons/bs";
+import { BsStar, BsX } from "react-icons/bs";
 import { useState } from "react";
 
 function Experience() {
-    
   function Card(props) {
-    const [displayDetails, setDisplayDetails] = useState(true)
+    const [displayDetails, setDisplayDetails] = useState(true);
 
     function handleDisplayDetails() {
-        setDisplayDetails((prev) => !prev)
+      setDisplayDetails((prev) => !prev);
     }
     return (
       <div className="experience" id="experience">
-        <div className="list-indent">
-          <BsStar />
-        </div>
-        <div className="experience-info">
-          <small>
-            {props.from} to {props.to}
-          </small>
-          <h4>{props.company}</h4>
-          <h5>{props.title}</h5>
-          {displayDetails ? (
+          <div className="list-indent">
+            <BsStar />
+          </div>
+          <div className="experience-info">
+            <a href={props.url}>
+            <small>
+              {props.from} to {props.to}
+            </small>
+            <h4>{props.company}</h4>
+            <h5>{props.title}</h5>   
+            </a>
+           
+            {displayDetails ? (
               <p onClick={handleDisplayDetails}>..details</p>
-          ) : ""}
-          
+            ) : (
+              ""
+            )}
+
             <div className="details-container">
-            <div className={displayDetails ? "none-details" : "details"}>                
-                <small onClick={handleDisplayDetails}><BsX/></small>
+              <div className={displayDetails ? "none-details" : "details"}>
+                <small onClick={handleDisplayDetails}>
+                  <BsX />
+                </small>
                 <p className="">{props.details}</p>
+              </div>
             </div>
-            </div>
-        
-        </div>
+          </div>
       </div>
     );
   }

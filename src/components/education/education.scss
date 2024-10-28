@@ -26,6 +26,9 @@
           z-index: 1; /* Ensure the text stays above the pseudo-element */
           transition: background-color 0.7s ease, color 0.4s ease; /* Transition for text color */
         }
+        .here{
+          text-decoration: underline;
+        }
   
         .list-indent::before {
           content: "";
