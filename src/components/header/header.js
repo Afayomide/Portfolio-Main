@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import "./header.css"
 import blackdeveloper from  "../images/blackdeveloper.jpg"
-import CV from "../images/chrisnpdf.pdf"
+import CV from "../images/fullstackchris.pdf"
 import Typewriter from "../typewriter/typewriter";
 import Aos from "aos";
 import "aos/dist/aos.css"

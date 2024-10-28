@@ -3,7 +3,7 @@ export const Data = [
         from: 2022,
         title: "The Web Developer bootcamp",
         school: "Udemy - Colt Steele",
-        details: `My first fullstack development course. I bought the course since 2021 but did not finally finish it till 2023. You can verify here \n`,
+        details: `My first fullstack development course. I bought the course since 2021 but did not finally finish it till 2023. You can verify \n`,
         url: `http://ude.my/UC-ae070ffc-8e29-4436-b853-409ad816eeb1`
     },
     {
