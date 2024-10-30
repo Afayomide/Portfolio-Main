@@ -45,6 +45,9 @@
       h5 {
         color: #54595f;
       }
+      p{
+        text-align: right;
+      }
       
       .experience-info{
         width: 100%;
@@ -59,7 +62,7 @@
     
          .details{  
             background-color: black;     
-             width: 80%;
+             width: 100%;
             position: absolute;
             display: block;
             right: 0;
@@ -70,6 +73,7 @@
             transition: opacity 0.5s ease-in-out; 
             p{
                 overflow-wrap: break-word; /* Prevent overflow by wrapping long words */
+                text-align: right;
             }
             small{
                 text-align: end;
@@ -119,7 +123,7 @@
         width: 80%;
         .details-container{
             .details{
-                width: 80%;
+                width: 100%;
 
             }
         }

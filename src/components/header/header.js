@@ -26,11 +26,13 @@ useEffect(()=>{
         <h2><Typewriter text={Developer} delay={100}/> <BsPencilFill/></h2>
         </div> 
         <div className="second-section">
-        <div className="image">
+        <div>
+          <div className="image">
         <img className="black-developer" src={blackdeveloper}/>
 </div>
 <div className="nice-p" data-aos= "fade-right">
  <p> Hello Nice To Have You here</p>
+</div>
 </div>
         <div  className="about-me">
             <p><span className="about">About</span>I am a FullStack developer 🧠 from Lagos, Nigeria.<br/>

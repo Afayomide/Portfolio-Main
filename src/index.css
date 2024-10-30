@@ -29,7 +29,7 @@ height: 100vh;
 body,html,.App{
     scroll-behavior: smooth;
     overflow-x: hidden !important;
-    background-color: #39393a;
+    background-color: #252727;
 width: 100%;
 min-height: 100%;
 padding: 0;
