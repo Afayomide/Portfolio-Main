@@ -8,13 +8,6 @@ function Footer(){
         <footer>
                 <h3>Chris Afayomide</h3>
                 <div className="footer-links">
-                 <a href="#home"> Home</a>
-                <a href="#home">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="#contact">Contact</a>
                 
                 </div>
 

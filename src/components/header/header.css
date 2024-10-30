@@ -50,9 +50,8 @@ header {
 header span {
 }
 .black-developer {
-  width: 14em;
-  height: 17em;
-  border-radius: 50%;
+  width: 16em;
+  border-radius: 5%;
   animation: float 3s ease-in-out infinite; /* Apply the animation */
 }
 .second-section {
@@ -98,7 +97,6 @@ h2 {
   }
   .black-developer {
     width: 10em;
-    height: 10em;
   }
   .nice-p {
     font-weight: 200;
