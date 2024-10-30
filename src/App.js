@@ -26,7 +26,7 @@ function App() {
         toast("Paused!", { icon: "⏸️" }); // Display toast on pause
       } else {
         audioRef.current.play();
-        toast("Playing!-neon gravestones by twenty one pilot", { icon: "▶️" }); // Display toast on play
+        toast("Playing Experience by Ludovico Einaudi", { icon: "▶️" }); // Display toast on play
       }
       setIsPlaying(!isPlaying);
     }
