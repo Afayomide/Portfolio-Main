@@ -5,6 +5,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
+  z-index: 1000;
+  position: relative;
 }
 
 header {
@@ -28,10 +30,10 @@ header {
   color: #777;
   margin-right: 0.7em;
 }
+
 .slide-in {
   width: 100%;
   animation: slide-in 1.75s forwards;
-  z-index: 1000000;
 }
 .nice-p {
   padding-top: 40px;
