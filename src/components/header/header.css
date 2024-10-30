@@ -31,6 +31,7 @@ header {
 .slide-in {
   width: 100%;
   animation: slide-in 1.75s forwards;
+  z-index: 1000000;
 }
 .nice-p {
   padding-top: 40px;
