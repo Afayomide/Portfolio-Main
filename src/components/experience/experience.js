@@ -33,7 +33,7 @@ function Experience() {
             <div className="details-container">
               <div className={displayDetails ? "none-details" : "details"}>
                 <small onClick={handleDisplayDetails}>
-                  <BsX />
+                  <BsX className="x-icon"/>
                 </small>
                 <p className="">{props.details}</p>
               </div>

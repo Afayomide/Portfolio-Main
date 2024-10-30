@@ -29,7 +29,7 @@ function Education() {
           
             <div className="details-container">
             <div className={displayDetails ? "none-details" : "details"}>                
-                <small onClick={handleDisplayDetails}><BsX/></small>
+                <small onClick={handleDisplayDetails}><BsX className="x-icon"/></small>
                 <p className="">
                     {props.details}
                    {props.url ? <a className="here" href={props.url}> here</a> : ""} 

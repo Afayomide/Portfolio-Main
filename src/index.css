@@ -62,7 +62,12 @@ font-family: "Poppins", sans-serif;
     left: 1rem;
     z-index: 100;
   }
-  
+
+.x-icon{
+    font-size: 2rem;
+    background-color: white;
+    border-radius: 50%;
+}
 @media(max-width: 400px){
 
     .topics{
