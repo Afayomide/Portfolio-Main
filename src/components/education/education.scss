@@ -12,6 +12,12 @@
         display: flex;
         align-items: start;
         margin-bottom: 2rem;
+        box-shadow: 5px 5px 10px white;
+        transition: box-shadow 1s;
+        border: .2px solid white;
+        border-radius: 1rem;
+        padding: 1rem;
+
         .list-indent {
           color: white;
           background-color: black;
@@ -95,6 +101,8 @@
         }
       }
       .education:hover {
+        box-shadow: none;
+
         .list-indent::before {
           left: 0; /* Slide the background to fully cover */
         }

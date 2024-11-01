@@ -1,6 +1,15 @@
 import React from "react";
 import "./skills.scss"
 import { BsPatchCheckFill } from 'react-icons/bs'
+import { FaReact } from "react-icons/fa6";
+import { TbBrandReactNative } from "react-icons/tb";
+import { RiNextjsFill } from "react-icons/ri";
+import { FaAws, FaVuejs } from "react-icons/fa";
+import { FaNodeJs } from "react-icons/fa";
+import { SiExpress, SiMongodb, SiNestjs } from "react-icons/si";
+import { BiLogoPostgresql, BiMusic } from "react-icons/bi";
+import { GiMedicinePills, GiMuscleUp, GiSpaceship } from "react-icons/gi";
+import { CiPen } from "react-icons/ci";
 
 
 function Skills () {
@@ -22,28 +31,28 @@ function Skills () {
 <div className="skills-container">
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<FaReact className="check"/>
        <div>
       <h5>React</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<TbBrandReactNative className="check"/>
        <div>
       <h5>React Native</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<RiNextjsFill className="check"/>
        <div>
       <h5>Nextjs</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<FaVuejs className="check"/>
        <div>
       <h5>vuejs</h5>
     </div>
@@ -58,41 +67,41 @@ function Skills () {
 <div className="skills-container">
 
 <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<FaNodeJs className="check"/>
    <div>
   <h5>Nodejs</h5>
 </div>
 </div>
 
 <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<SiExpress className="check"/>
    <div>
   <h5>Express</h5>
 </div>
 </div>
 
 <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<SiNestjs className="check"/>
    <div>
   <h5>Nest</h5>
 </div>
 </div>
 
 <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<BiLogoPostgresql className="check"/>
    <div>
   <h5>postgreSQL</h5>
 </div>
 </div>
 
 <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<SiMongodb className="check"/>
    <div>
   <h5>MongoDB</h5>
 </div>
 </div>
 <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<FaAws className="check"/>
    <div>
   <h5>AWS</h5>
 </div>
@@ -112,46 +121,40 @@ function Skills () {
 <div className="skills-container">
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<CiPen className="check"/>
        <div>
       <h5>Writer</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<GiMuscleUp className="check"/>
        <div>
       <h5>Fitness</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<GiMedicinePills className="check"/>
        <div>
       <h5>Medicine</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<GiSpaceship className="check"/>
        <div>
       <h5>Astrology</h5>
     </div>
     </div>
 
     <div className="skills-list">
-<BsPatchCheckFill className="check"/>
+<BiMusic className="check"/>
        <div>
       <h5>Music</h5>
     </div>
     </div>
 
-    <div className="skills-list">
-<BsPatchCheckFill className="check"/>
-       <div>
-      <h5>Sleep</h5>
-    </div>
-    </div>
 </div>
 </div>
 </div>
