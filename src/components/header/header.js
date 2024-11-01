@@ -9,7 +9,7 @@ import "aos/dist/aos.css"
 import { BsPencilFill } from "react-icons/bs";
 import RippleButton from "../rippleButton/rippleButton";
 
-const Developer = `</ Fullstack Developer > And A Writer`
+const Developer = `</ Fullstack Developer >`
 function Header(){
 
 useEffect(()=>{
@@ -37,7 +37,7 @@ useEffect(()=>{
         <div  className="about-me">
             <p><span className="about">About</span>I am a FullStack developer 🧠 from Lagos, Nigeria.<br/>
               A <span>music lover 🎵</span> and A huge fan of the show <span>The Big Bang Theory 🍿</span><br/>
-              I enjoy <span>writing ✍️</span>, and I love <span>working out 💪</span><br/>
+              I enjoy <span>writing ✍️</span><br/>
               I am skilled in both frontend and backend technologies<br/>
         </p>
         <p>
