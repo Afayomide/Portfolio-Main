@@ -12,6 +12,7 @@ height: 100vh;
 .contents{
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
+    margin-top: 5rem;
 }
 
 .line{

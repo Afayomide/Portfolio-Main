@@ -12,6 +12,39 @@
 header {
   margin-bottom: none;
   padding-bottom: none;
+  overflow: hidden; /* Hides overflow, if necessary */
+}
+.video-container {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 150%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  object-fit: cover; /* Ensures video covers the background without stretching */
+  overflow: hidden; /* Hides overflow, if necessary */
+}
+.home-bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Ensure video is at the back */
+}
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: 2; /* Overlay above video */
 }
 @keyframes slide-in {
   0% {
@@ -40,6 +73,7 @@ header {
 
   font-weight: 300;
   font-size: 2em;
+  text-align: center;
 }
 .about-me {
   margin-top: 20px;
@@ -59,11 +93,11 @@ header span {
   justify-content: space-evenly;
 }
 
-.second-section div:nth-child(1){
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+.second-section div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header h3,
@@ -83,13 +117,12 @@ h2 {
   }
 }
 @media (max-width: 800px) {
-  .second-section{
+  .second-section {
     flex-direction: column;
     align-items: center;
   }
 }
 @media (max-width: 500px) {
- 
   h1,
   header h2 {
     font-size: smaller;
@@ -103,10 +136,15 @@ h2 {
     font-family: cursive;
   }
   .about-me {
-    width: 80%;
+    width: 60%;
     font-size: 14px;
   }
   .first-section {
     padding-top: 30px;
+  }
+  .video-container {
+ 
+    min-width: 100%;
+
   }
 }
