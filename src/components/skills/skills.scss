@@ -18,7 +18,7 @@
     border-radius: 2em;
     margin-bottom: 2%;
     padding: 2em 0;
-    height: 20em;
+    height: 25rem;
     position: relative;
     overflow: hidden;
     transition: background-color 0.7s ease, color 0.4s ease; /* Transition for text color */
@@ -54,6 +54,8 @@
 
 .skills-list{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .skills-container{
@@ -78,9 +80,7 @@
     #skills{
      width: 20em;
     }
-    .about-me{
-        width: 50%;
-     }
+   
 }
 @media (max-width: 900px) {
     .skills{
@@ -99,9 +99,7 @@
     .check{
         font-size: 14px;
     }
-    .about-me{
-        width: 60%;
-     }
+   
 }
 
 @media (max-width: 420px) {

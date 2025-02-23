@@ -34,7 +34,7 @@ function SideBar() {
     }, [lastScrollY]);
 
     return(
-        <div className={`side-bar-container ${isVisible ? "side-bar-none" : "side-bar-visible"}`}>
+        <div className={`side-bar-container ${isVisible ? "side-bar-visible" : "side-bar-none"}`}>
         <div>
         <div className="bar-link-container">
                 <a href="#home"><FcAbout className="bar-icons"/>

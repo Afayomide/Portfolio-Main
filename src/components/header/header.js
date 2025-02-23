@@ -1,69 +1,78 @@
-import React from "react";
-import { useEffect } from "react";
-import "./header.css";
-import blackdeveloper from "../images/blackdeveloper.jpg";
-import CV from "../images/fullstackchris.pdf";
-import Typewriter from "../typewriter/typewriter";
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { BsPencilFill } from "react-icons/bs";
-import RippleButton from "../rippleButton/rippleButton";
-import bgMovie from "../images/21pilots.mp4";
+"use client"
 
-const Developer = `</ Fullstack Developer >`;
+import { useEffect } from "react"
+import "./header.css"
+import blackdeveloper from "../images/blackdeveloper.jpg"
+import CV from "../images/fullstackchris.pdf"
+import Typewriter from "../typewriter/typewriter"
+import Aos from "aos"
+import "aos/dist/aos.css"
+import { BsPencilFill, BsDownload, BsGithub, BsLinkedin } from "react-icons/bs"
+import RippleButton from "../rippleButton/rippleButton"
+import bgMovie from "../images/21pilots.mp4"
+
+const Developer = `</ Fullstack Developer >`
+
 function Header() {
   useEffect(() => {
-    Aos.init({ duration: 3000 });
-  }, []);
+    Aos.init({ duration: 2000 })
+  }, [])
 
   return (
     <header id="home">
       <div className="video-container">
-      <video autoPlay muted loop playsInline 
- className="home-bg-video">
-        <source src={bgMovie} type="video/mp4"  />
-      </video>
-      <div class="video-overlay"></div>
+        <video autoPlay muted loop playsInline className="home-bg-video">
+          <source src={bgMovie} type="video/mp4" />
+        </video>
+        <div className="video-overlay"></div>
       </div>
-      <div className="slide-in first-section">
-        <h3>Hello World,</h3>
-        <h1>
-          I'm <span>Chris</span> Afayomide
-        </h1>
-        <h2>
-          <Typewriter text={Developer} delay={100} /> <BsPencilFill />
-        </h2>
-      </div>
-      <div className="second-section">
-        <div>
-          <div className="image">
-            <img className="black-developer" src={blackdeveloper} />
-          </div>
-          <div className="nice-p" data-aos="fade-right">
-            <p> Hello Nice To Have You here</p>
+      <div className="header-content">
+        <div className="first-section" data-aos="fade-down">
+          <h3>Hello World,</h3>
+          <h1>
+            I'm <span className="highlight">Chris</span> Afayomide
+          </h1>
+          <h2>
+            <Typewriter text={Developer} delay={100} /> <BsPencilFill />
+          </h2>
+          <div className="social-links">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+              <BsGithub />
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+              <BsLinkedin />
+            </a>
           </div>
         </div>
-        <div className="about-me">
-          <p>
-            <span className="about">About</span>I am a FullStack developer 🧠
-            from Lagos, Nigeria.
-            <br />A <span>music lover 🎵</span> and A huge fan of the show{" "}
-            <span>The Big Bang Theory 🍿</span>
-            <br />I enjoy <span>writing ✍️</span>
-            <br />
-            I am skilled in both frontend and backend technologies
-            <br />
-          </p>
-          <p>
-            I am also a freak when it comes to writing modular and conscice code
-          </p>
-          <a href={CV} download={CV}>
-            <RippleButton className="">Download CV</RippleButton>
-          </a>
+        <div className="second-section">
+          <div className="image-container" data-aos="fade-right">
+            <img className="black-developer" src={blackdeveloper || "/placeholder.svg"} alt="Chris Afayomide" />
+            <div className="nice-p">
+              <p>Hello, Nice To Have You Here</p>
+            </div>
+          </div>
+          <div className="about-me" data-aos="fade-left">
+            <h2 className="about-title">About Me</h2>
+            <p>
+              I'm a FullStack developer 🧠 from Lagos, Nigeria. A <span className="highlight">music lover 🎵</span> and
+              a huge fan of the show <span className="highlight">The Big Bang Theory 🍿</span>
+            </p>
+            <p>
+              I enjoy <span className="highlight">writing ✍️</span> and am skilled in both frontend and backend
+              technologies.
+            </p>
+            <p>I'm also passionate about writing modular and concise code.</p>
+            <a href={CV} download={CV}>
+              <RippleButton className="cv-button">
+                Download CV <BsDownload />
+              </RippleButton>
+            </a>
+          </div>
         </div>
       </div>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
+
