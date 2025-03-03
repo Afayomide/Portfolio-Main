@@ -9,7 +9,7 @@ import Aos from "aos"
 import "aos/dist/aos.css"
 import { BsPencilFill, BsDownload, BsGithub, BsLinkedin } from "react-icons/bs"
 import RippleButton from "../rippleButton/rippleButton"
-import bgMovie from "../images/21pilots.mp4"
+import bgMovie from "../images/backgroundimage.mp4"
 
 const Developer = `</ Fullstack Developer >`
 
@@ -36,10 +36,10 @@ function Header() {
             <Typewriter text={Developer} delay={100} /> <BsPencilFill />
           </h2>
           <div className="social-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/afayomide" target="_blank" rel="noopener noreferrer">
               <BsGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/oluwaseyi-afayomide-849251161?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrdtFOUn1QhO5AkHqZE%2Fq8w%3D%3D" target="_blank" rel="noopener noreferrer">
               <BsLinkedin />
             </a>
           </div>
