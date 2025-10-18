@@ -1,175 +1,173 @@
 .education-container {
-    width: 50%;
-    margin: auto;
-    .education-list {
-      display: flex;
-      justify-content: space-between;
-      gap: .5rem;
-      margin: auto;
-      flex-wrap: wrap;
-      .education {
-        width: 45%;
-        display: flex;
-        align-items: start;
-        margin-bottom: 2rem;
-        box-shadow: 3px 3px 10px white;
-        transition: box-shadow 1s;
-        border: .2px solid white;
-        border-radius: 1rem;
-        padding: 1rem;
+  width: 70%;
+  margin: 4rem auto;
+  color: white;
 
-        .list-indent {
-          color: white;
-          background-color: black;
-          padding: 0.5rem 0.5rem;
-          border-radius: 50%;
-          margin-right: 0.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          position: relative;
-          overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
-          z-index: 1; /* Ensure the text stays above the pseudo-element */
-          transition: background-color 0.7s ease, color 0.4s ease; /* Transition for text color */
-        }
-        .here{
-          text-decoration: underline;
-        }
-  
-        .list-indent::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -100%; /* Start completely to the left */
-          width: 100%;
-          height: 100%;
-          background-color: white; /* The hover background color */
-          transition: left 0.7s ease; /* Smooth left transition */
-          z-index: -1; /* Place behind the text */
-        }
-  
-        small {
-          color: #7a7a7a;
-        }
-        h5 {
-          color: #54595f;
-        }
-        p{
-          text-align: right;
-        }
-        .education-info{
-          width: 100%;
-        }
-        .details-container{
-          position: relative;
-      
-           .details{  
-              background-color: #111;     
-               width: 100%;
-              position: absolute;
-              display: block;
-              right: 0;
-              border-radius: .5rem;
-              box-sizing: border-box; /* Add this line */
-              padding: 1rem;
-              opacity: 1;             // Full visibility when details are shown
-              transition: opacity 0.5s ease-in-out; 
-              p{
-                  overflow-wrap: break-word; /* Prevent overflow by wrapping long words */
-              }
-              small{
-                  text-align: end;
-              }
-           }
-           .none-details{
-              background-color: black;     
-              width: 80%;
-             position: absolute;
-             display: block;
-             right: 0;
-             border-radius: .5rem;
-             box-sizing: border-box; /* Add this line */
-             padding: 1rem;
-             height: 0;
-             width: 0;
-              opacity: 0;    
-              transition: opacity 0.5s ease-in-out; // Transition effect for opacity
-              p{
-               display: none;
-              }
-           }
+  .topics {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    .new-topic {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      background: linear-gradient(90deg, #d4af37, #f5d76e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sub-topic {
+      color: #c9c9c9;
+      font-size: 1rem;
+      margin-top: 0.3rem;
+    }
+  }
+
+  .education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+
+    .education {
+      width: 45%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 1rem;
+      padding: 1.2rem;
+      display: flex;
+      align-items: start;
+      gap: 1rem;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.05);
+      transition: all 0.3s ease;
+      position: relative;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 0 25px rgba(212, 175, 55, 0.15);
+      }
+
+      .list-indent {
+        background: linear-gradient(90deg, #d4af37, #f5d76e);
+        color: #000;
+        padding: 0.6rem;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+        transition: all 0.4s ease;
+
+        &:hover {
+          background: transparent;
+          color: #d4af37;
+          border: 1px solid #d4af37;
         }
       }
-      .education:hover {
-        box-shadow: none;
 
-        .list-indent::before {
-          left: 0; /* Slide the background to fully cover */
+      .education-info {
+        flex: 1;
+
+        small {
+          color: #b5b5b5;
+          font-size: 0.85rem;
         }
-  
-        .list-indent {
-          color: black; /* Change text color when hovered */
+
+        h4 {
+          color: #fff;
+          font-size: 1.1rem;
+          margin: 0.2rem 0;
+        }
+
+        h5 {
+          color: #dcdcdc;
+          font-weight: normal;
+          margin-bottom: 0.5rem;
+        }
+
+        /* 🔥 Toggle link now gold */
+        .details-toggle {
+          color: #d4af37;
+          cursor: pointer;
+          text-align: right;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #f5d76e;
+            text-decoration: underline;
+          }
+        }
+
+        .details-container {
+          overflow: hidden;
+          transition: max-height 0.4s ease, opacity 0.3s ease;
+          max-height: 0;
+          opacity: 0;
+
+          &.show {
+            max-height: 300px;
+            opacity: 1;
+          }
+
+          .details {
+            background: #111;
+            border: 1px solid rgba(255, 215, 0, 0.15);
+            border-radius: 0.7rem;
+            padding: 1rem;
+            margin-top: 0.8rem;
+            position: relative;
+
+            p {
+              font-size: 0.95rem;
+              color: #ccc;
+              line-height: 1.5;
+            }
+
+            .here {
+              color: #d4af37;
+              text-decoration: underline;
+            }
+
+            small {
+              position: absolute;
+              top: 0.5rem;
+              right: 0.8rem;
+              cursor: pointer;
+              color: #999;
+              font-size: 1.3rem;
+
+              &:hover {
+                color: #f5d76e;
+              }
+            }
+          }
         }
       }
     }
   }
-  
+
   @media (max-width: 1200px) {
-    .education-container{
-      width: 80%;
-  .education-list{
-
-  .education{
-      width: 40%;
-      .details-container{
-          .details{
-              width: 100%;
-
-          }
-      }
-  } 
+    width: 85%;
+    .education-list .education {
+      width: 48%;
+    }
   }
- 
-}
-  }
+
   @media (max-width: 900px) {
-      .education-container{
-          width: 90vw;
-      .education-list{
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-      .education{
-          width: 50%;
-          .details-container{
-              .details{
-                  width: 100%;
-  
-              }
-          }
-      } 
-      }
-     
-  }
+    width: 90%;
+    .education-list .education {
+      width: 80%;
+    }
   }
 
   @media (max-width: 600px) {
-    .education-container{
-        width: 90vw;
-    .education-list{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    .education{
-        width: 80%;
-        .details-container{
-            .details{
-                width: 100%;
-
-            }
-        }
-    } 
+    width: 95%;
+    .education-list .education {
+      width: 100%;
     }
-   
-}
+  }
 }

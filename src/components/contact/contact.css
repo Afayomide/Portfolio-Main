@@ -1,59 +1,188 @@
-.per-contact{    
-    background-color: #111;
-    border: #000 solid .1em;
-    text-align: center;
-    color: grey;
-    border-radius: 1em;
-    width: 20em;
-    margin-bottom: 20px;
-    padding: 1em;
-    transition: background 0.5s ease-in-out;
+/* ========== Contact Section (Gold Theme) ========== */
+.contact-section {
+  padding: 5rem 1rem;
+  background: linear-gradient(145deg, #0e0e0e, #1b1b1b);
+  color: #fff;
+  overflow: hidden;
 }
 
-
-
-.per-contact img{
-    width: 30px;
+.topics {
+  text-align: center;
+  margin-bottom: 3rem;
 }
-.contacts-parent{
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
+
+.new-topic {
+  font-size: 2.3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ffb84d, #f5b342);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease forwards;
+}
+
+.sub-topic {
+  color: #d6d6d6;
+  font-size: 1.1rem;
+  animation: fadeInUp 1s ease forwards;
+}
+
+/* Layout */
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Contact Cards */
+.contacts-parent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1;
+  align-items: center;
+}
+
+.per-contact {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  border-radius: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  color: #e5e5e5;
+  transition: all 0.4s ease;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+}
+
+.per-contact:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.per-contact:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+.per-contact:hover {
+  background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.25);
+  transform: translateY(-5px) scale(1.02);
+}
+
+.icon-wrapper {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffb84d;
+  animation: floatIcon 3s ease-in-out infinite;
+}
+
+.per-contact h4 {
+  font-size: 1.3rem;
+  color: #f5b342;
+  margin-bottom: 0.5rem;
+}
+
+.per-contact p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #c9c9c9;
+}
+
+.per-contact a {
+  display: inline-block;
+  background: linear-gradient(90deg, #ffb84d, #f5b342);
+  color: #111;
+  text-decoration: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.per-contact a:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ffb84d, #f5b342);
+  color: #fff;
+}
+
+/* Contact Form */
+.contact-form-wrapper {
+  flex: 1;
+  min-width: 320px;
+  max-width: 500px;
+  animation: fadeInRight 1s ease forwards;
+}
+
+/* ========== Animations ========== */
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes floatIcon {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
     align-items: center;
-}
+    gap: 2.5rem;
+  }
 
-.per-contact:hover{
-    background-color: #1111;  
-}
-
-.contact-form{
-    display: flex;
-    justify-content: space-around;
-
-    margin-bottom: 2rem;
-}
-
-@media(max-width: 800px){
-        .contact-form{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .per-contact{
-            width: 20em;
-        }
-    
-}
-
-@media(max-width: 400px){
-    .per-contact{
-        width: 17em;
-    }
-}
-
-@media (max-width: 350px) {
-    #experience{
-     width: 14rem;
-     font-size: 8px;
- }
+  .contact-form-wrapper,
+  .contacts-parent {
+    width: 90%;
+  }
 }

@@ -1,32 +1,121 @@
-footer{
-    background-color: #111;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin-top: 2em;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 100px 0;
-    padding: 3rem 1rem;
+footer {
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1rem;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInFooter 1.2s ease-in-out;
 }
 
-.footer-links{
-    display: flex;
-flex-direction: row;    
-justify-content: space-between;
-}
-.footer-icons a {
-    margin-right: 20px;
+/* Subtle background glow animation */
+footer::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent 60%);
+  z-index: 0;
 }
 
+.footer-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  z-index: 1;
+  animation: popIn 1s ease forwards;
+}
 
-@media(max-width: 700px) {
-    .footer-links{
-        display: flex;
-        flex-direction: column;
-      margin-bottom: 10px;
-    }
-    footer{
-        margin: 0px;
-    }
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  z-index: 1;
+}
+
+.footer-icon {
+  color: #bbb;
+  font-size: 1.8rem;
+  transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-icon:hover {
+  color: #ffb84d;
+;
+  transform: scale(1.2);
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+}
+
+.footer-copy {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+  z-index: 1;
+  animation: fadeIn 1.5s ease forwards;
+}
+
+/* Keyframes */
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeInFooter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .footer {
+    padding: 2rem 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.4rem;
+  }
+
+  .footer-icon {
+    font-size: 1.6rem;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+  }
 }

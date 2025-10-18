@@ -1,85 +1,139 @@
-.App{
-    scroll-behavior: smooth;
-    color: #fff;
-}
-.elements{
-    z-index: 100;
-    position: absolute;
-height: 100vh;
 
-}
 
-.contents{
-    border-top-left-radius: 3em;
-    border-top-right-radius: 3em;
-    margin-top: 5rem;
+html, body, .App {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100%;
+  overflow-x: hidden;
+  background: #000;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
 }
-
-.line{
-    width: 80%;
-    height: 2px;
-    background-color: #aaa;
-    color:#aaa;
-    font-size: 2px;
-    border: 2px;
-    display: block;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-body,html,.App{
-    scroll-behavior: smooth;
-    overflow-x: hidden !important;
-    background-color: black;
-width: 100%;
-min-height: 100%;
-padding: 0;
-margin: 0;
-font-family: "Poppins", sans-serif;
-}
-
 * {
-    box-sizing: border-box; /* Ensure padding and border are included in the width */
-  }
-  a{
-    text-decoration: none;
-      color: #fff
-  }
-
-
-.topics{
-    display: grid;
-    justify-content: center;
-    width: 100%;
-    margin: 6em auto 1em auto;
-    text-align: center;
-    
+  box-sizing: border-box;   
 }
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* === FIXED STARRY BACKGROUND === */
+.background-space {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at bottom, #020202 0%, #000 100%);
+}
+
+/* Big glowing stars */
+.star {
+  position: absolute;
+  background: radial-gradient(circle, #ffffff 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: drift 20s linear infinite;
+}
+
+/* Animate stars gently downward */
+@keyframes drift {
+  0% {
+    transform: translateY(-10vh) translateX(0);
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(110vh) translateX(20px);
+    opacity: 0;
+  }
+}
+
+/* === ADDITIONAL GLOW ELEMENTS (optional planets/nebulae) === */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: 0.05;
+  animation: slowRotate 60s linear infinite;
+}
+
+.glow-orb:nth-child(1) {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, #00fff2 0%, transparent 70%);
+  top: 20%;
+  left: 10%;
+}
+.glow-orb:nth-child(2) {
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, #ff00ff 0%, transparent 70%);
+  bottom: 15%;
+  right: 10%;
+}
+.glow-orb:nth-child(3) {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #00ffaa 0%, transparent 70%);
+  top: 50%;
+  right: 40%;
+}
+
+@keyframes slowRotate {
+  from { transform: rotate(0deg) scale(1); }
+  to { transform: rotate(360deg) scale(1.1); }
+}
+
+/* === MAIN CONTENT === */
+.App-content {
+  position: relative;
+  z-index: 5; /* ensures content stays above all effects */
+  padding: 2rem;
+}
+
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #555;
+  display: block;
+  margin: 2rem auto;
+}
+
+.topics {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
 .playmusic {
-    position: fixed;
-    bottom: 2vh;
-    color: var(--color-secondary);
-    font-size: 1.5rem;
-    left: 1rem;
-    z-index: 100;
+  position: fixed;
+  bottom: 2vh;
+  left: 1rem;
+  font-size: 1.5rem;
+  color: #00ffee;
+  z-index: 100;
+}
+
+.x-icon {
+  font-size: 2rem;
+  background-color: white;
+  border-radius: 50%;
+}
+
+@media (max-width: 400px) {
+  .topics {
+    margin-top: 2em;
+    font-size: smaller;
   }
-
-.x-icon{
-    font-size: 2rem;
-    background-color: white;
-    border-radius: 50%;
 }
-@media(max-width: 400px){
-
-    .topics{
-        margin-top: 2em;
-        font-size: smaller;
-
-}
-}
-
-
-
-
-
-

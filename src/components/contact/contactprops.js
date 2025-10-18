@@ -1,23 +1,17 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-
 import React from "react";
-import "./contact.css"
+import "./contact.css";
 
-function ContactCard (props){
-    const{name, info, icon,id,link} = props
-
-    const Icon =icon
-    return(
-    <div className="per-contact" key={id}>
-        
-       <div>
-         {icon}
-       </div>
-       <p>{name}</p>
-          <p>{info}</p>
-       <a href={link}>Send me a message</a>
+function ContactCard({ name, info, icon, link }) {
+  return (
+    <div className="per-contact fade-in">
+      <div className="icon-wrapper">{icon}</div>
+      <h4>{name}</h4>
+      <p>{info}</p>
+      <a href={link} target="_blank" rel="noreferrer">
+        Send me a message
+      </a>
     </div>
-    )
+  );
 }
-export default ContactCard
+
+export default ContactCard;
