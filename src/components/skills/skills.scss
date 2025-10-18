@@ -225,5 +225,12 @@
 
   .skills-card {
     width: 90%;
+      background: conic-gradient(
+    from 0deg,
+    rgba(255, 154, 158, 0.2),
+    rgba(252, 182, 159, 0.2),
+    rgba(255, 221, 225, 0.2),
+    rgba(255, 154, 158, 0.2)
+  );
   }
 }
