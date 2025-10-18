@@ -1,6 +1,6 @@
 export const Data = [
     {
-        from: 2022,
+        from: "Jan 2022",
         to: "Present",
         title: "Full Stack Developer",
         company: "Plusworld Roofing Limited",
@@ -9,16 +9,16 @@ export const Data = [
         url: 'https://plusworld.vercel.app'
     },
     {
-        from: 2023,
-        to: "Present",
+        from: "Oct 2023",
+        to: "May 2025",
         title: "Full Stack Developer",
         company: "Afrifashion",
         details: `I independently developed and designed from scratch a fully customizable webapp to sell african fabrics`,
         url: 'https://afrifashion.vercel.app'
     },
     {
-        from: 2023,
-        to: "Present",
+        from: "Dec 2024",
+        to: "Feb 2025",
         title: "Full Stack Developer",
         company: "Audet Blog (Personal Blog)",
         details: `I independently developed and designed a fully customizable web app to upload and read music blogs`,
