@@ -117,15 +117,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(255, 255, 255, 0.08);
   padding: 0.8rem 1rem;
   border-radius: 1rem;
   transition: all 0.3s ease;
+    background-color: transparent;
+  background: rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px); /* Safari/iOS fix */
 }
 
 .skills-list:hover {
-  background: rgba(255, 200, 150, 0.12);
+  background: rgba(255, 200, 150, 0.08);
   transform: translateY(-4px) scale(1.02);
 }
 
