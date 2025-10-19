@@ -55,8 +55,8 @@ function Header() {
           </div>
 
           <a
-            href="https://drive.google.com/file/d/1G-xpy0AqQujmrotuHcczM6wIIbdt5rIP/view?usp=drive_link"
-            download="https://drive.google.com/file/d/1G-xpy0AqQujmrotuHcczM6wIIbdt5rIP/view?usp=drive_link"
+            href="https://docs.google.com/document/d/e/2PACX-1vTveFmPMdV60caJCXVhYrpJWbDnJHjQLdB-bt35WJW7iu4tVYYu0diGnuyUtnFYcAtIfR1y8AZ5wESN/pub"
+            download="https://docs.google.com/document/d/e/2PACX-1vTveFmPMdV60caJCXVhYrpJWbDnJHjQLdB-bt35WJW7iu4tVYYu0diGnuyUtnFYcAtIfR1y8AZ5wESN/pub"
             target="_blank"
             rel="noopener noreferrer"
           >
