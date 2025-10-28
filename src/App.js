@@ -253,7 +253,6 @@ function App() {
         <div className="glow-orb"></div>
         <div className="glow-orb"></div>
 
-        {/* Floating stars */}
         {Array.from({ length: 25 }).map((_, i) => (
           <div
             key={i}
