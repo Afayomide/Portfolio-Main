@@ -1,6 +1,6 @@
 export const Data = [
     {
-        from: "Jan 2022",
+        from: "Feb 2024",
         to: "Present",
         title: "Full Stack Developer",
         company: "Plusworld Roofing Limited",
